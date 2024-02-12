@@ -1,0 +1,18 @@
+
+version: 2
+
+sources:
+  - name: snowflake
+    database: db
+    schema: dbt
+    tables:
+      - name: contracts
+      - name: contracts_staging
+      - name: contracts_base
+  - name: snowpark
+    database: db
+    schema: snowpark
+    tables:
+      - name: immobilien
+
+
